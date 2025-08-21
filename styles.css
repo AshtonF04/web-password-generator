@@ -1,0 +1,77 @@
+/* Body and wrapper styling */
+body{
+    margin: 0px;
+    font-family: "Karla", sans-serif;
+    background-color: #1F2937;
+    color: white;
+}
+
+.wrapper-div{
+    width: 500px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Hero Section Styling */
+
+.hero-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hero-div h1{
+    margin: 0px;
+    font-size: 50px;
+}
+
+#hero-line-two{
+    color: #4ADF86;
+}
+
+.hero-div h3{
+    font-weight: normal;
+    color: #D5D4D8;
+    margin-top: 15px;
+}
+
+
+/* Button Styling */
+
+#generate-button{
+    background-color: #10B981;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: large;
+}
+
+#generate-button:hover{
+    background-color: #0da371;
+}
+
+/* Passwords Display Styling */
+.passwords-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.passwords-div p{
+    width: 240px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #273549;
+    text-align: center;
+    line-height: 40px;
+    color: #55F991;
+}
+
+/* Misc Styles */
+.h-divider{
+    border: 1px solid #2F3E53;
+}
