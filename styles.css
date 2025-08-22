@@ -86,7 +86,7 @@ body{
     justify-content: space-between;
 }
 
-.passwords-div p{
+.passwords-div button{
     width: 240px;
     height: 40px;
     border-radius: 7px;
@@ -94,6 +94,7 @@ body{
     text-align: center;
     line-height: 40px;
     color: #55F991;
+    border: none;
 }
 
 /* Misc Styles */

@@ -12,7 +12,7 @@ function generateRandomPassword(){
     let password = ""
     let passwordLength = (passwordLengthEl.value > 20 ? 20 : passwordLengthEl.value)
 
-    for (let i = 0; i < passwordLength; i++){
+    for (let i = 0; i < (passwordLength == "" ? 15 : passwordLength); i++){
         let randomCharacter = characters[Math.floor( Math.random() * characters.length )]
         password += randomCharacter
     }
