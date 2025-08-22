@@ -4,6 +4,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     "`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";",
     "<",">",".","?","/"];
 
+let passwordOne = ""
+let passwordTwo = ""
+
 let passwordOneEl = document.getElementById("password-one")
 let passwordTwoEl = document.getElementById("password-two")
 let passwordLengthEl = document.getElementById("password-length-el")
@@ -20,9 +23,21 @@ function generateRandomPassword(){
 }
 
 function getPasswords(){
-    let passwordOne = generateRandomPassword()
-    let passwordTwo = generateRandomPassword()
+    passwordOne = generateRandomPassword()
+    passwordTwo = generateRandomPassword()
 
     passwordOneEl.textContent = passwordOne
     passwordTwoEl.textContent = passwordTwo
+}
+
+function copyPasswordOne(){
+    if (passwordOne === "") return
+    navigator.clipboard.writeText(passwordOne)
+    window.alert("Copied password to clipboard!")
+}
+
+function copyPasswordTwo(){
+    if (passwordTwo === "") return
+    navigator.clipboard.writeText(passwordTwo)
+    window.alert("Copied password to clipboard!")
 }

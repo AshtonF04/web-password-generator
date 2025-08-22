@@ -97,6 +97,10 @@ body{
     border: none;
 }
 
+.passwords-div button:hover{
+    background-color: #212e3f;
+}
+
 /* Misc Styles */
 .h-divider{
     border: 1px solid #2F3E53;
